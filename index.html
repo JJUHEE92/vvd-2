@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비비드뷰티하우스</title>
+    
+    <!-- PWA 관련 메타 태그 -->
+    <meta name="description" content="김해 1등 아이롱펌 전문 매장 비비드뷰티하우스">
+    <meta name="theme-color" content="#00c73c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="비비드뷰티하우스">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- PWA 아이콘 -->
+    <link rel="icon" type="image/png" sizes="32x32" href="image/logo.1.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/logo.1.jpg">
+    <link rel="apple-touch-icon" href="image/logo.1.jpg">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- 폰트 추가 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 헤더 섹션 시작 -->
+    <header class="header">
+        <!-- 로고와 브랜드 이름 그룹 -->
+        <div class="logo-container">
+            <img src="image/logo.1.jpg" alt="비비드뷰티하우스 로고" class="logo">
+            <h1 class="brand-name">VIVID Beauty House</h1>
+        </div>
+
+        <!-- 네비게이션 메뉴 -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#designer">디자이너소개</a></li>
+                <li><a href="#review">고객리뷰</a></li>
+                <li><a href="#brand">매장소개</a></li>
+            </ul>
+        </nav>
+
+        <!-- 로그인 버튼 -->
+        <button class="login-btn">로그인</button>
+    </header>
+
+    <!-- 히어로 섹션 시작 -->
+    <section class="hero">
+        <!-- 캐러셀 전체 컨테이너 -->
+        <div class="carousel">
+            <!-- 왼쪽 화살표 -->
+            <button class="carousel-arrow left" aria-label="이전 슬라이드">&#60;</button>
+            <!-- 슬라이드들 -->
+            <div class="carousel-slides">
+                <!-- 슬라이드 1 -->
+                <div class="carousel-slide active" style="background-image: url('image/iron.webp');">
+                    <div class="slide-content">
+                        <div class="slide-brand">비비드뷰티하우스</div>
+                        <h2>김해 1등 아이롱펌 전문 매장</h2>
+                        <p>1등 전문매장, 저희의 철학을 담아 아름다움을 표현합니다.</p>
+                        <a href="https://naver.me/GDvGMv7y" target="_blank" class="buy-btn">예약하기</a>
+                    </div>
+                </div>
+                <!-- 슬라이드 2 -->
+                <div class="carousel-slide" style="background-image: url('image/model 1.JPG');">
+                    <div class="slide-content">
+                        <div class="slide-brand">비비드뷰티하우스</div>
+                        <h2>세련되고 감각있게</h2>
+                        <p>평범함속에 나만의 개성을 찾아드립니다</p>
+                        <a href="https://naver.me/GDvGMv7y" target="_blank" class="buy-btn">예약하기</a>
+                    </div>
+                </div>
+                <!-- 슬라이드 3 -->
+                <div class="carousel-slide" style="background-image: url('image/model 2.JPG');">
+                    <div class="slide-content">
+                        <div class="slide-brand">비비드뷰티하우스</div>
+                        <h2>당신의 헤어고민을 해결하고</h2>
+                        <p>숨겨진 아름다움을 찾아드립니다.</p>
+                        <a href="https://naver.me/GDvGMv7y" target="_blank" class="buy-btn">예약하기</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 오른쪽 화살표 -->
+            <button class="carousel-arrow right" aria-label="다음 슬라이드">&#62;</button>
+        </div>
+    </section>
+
+    <!-- 제품 섹션 시작 -->
+    <section class="product-section" id="designer">
+        <!-- 컨테이너 -->
+        <div class="product-container">
+            <!-- 대표 이미지 -->
+            <img src="image/show 1.png" alt="비비드뷰티하우스 대표 이미지" class="product-main-img">
+            <!-- 타이틀 -->
+            <h1 class="product-title">비비드뷰티하우스 디자이너소개</h1>
+            <!-- 2x2 제품 그리드 -->
+            <div class="product-grid">
+                <!-- 디자이너 1 -->
+                <div class="product-card">
+                    <img src="image/p1 (1).jpg" alt="대표원장 정재영" class="product-img">
+                    <div class="product-info">
+                        <div class="product-designer">대표원장 정재영</div>
+                        <div class="product-desc short">
+                            김해 최초로 아이롱펌을 도입한 김해 아이롱1등 매장 비비드뷰티하우스 원장 정재영입니다.<br>
+                            아이롱펌 교육을 진행하는 강사로 활동하며 유럽에서 최고의 교육을 받으며 늘 새로운 뷰티 감각으로 더 멋지고 젊어 보이는 스타일을 만들어 드립니다.<br>
+                            나이와 스타일에 딱 맞는 맞춤형 뷰티 솔루션새로운 메뉴와 케어 프로그램으로 몸도 마음도 더 젊어지는 시간을 선물해드려요.
+                        </div>
+                        <div class="product-desc full" style="display:none;">
+                            김해 최초로 아이롱펌을 도입한 김해 아이롱1등 매장 비비드뷰티하우스 원장 정재영입니다.<br>
+                            아이롱펌 교육을 진행하는 강사로 활동하며 유럽에서 최고의 교육을 받으며 늘 새로운 뷰티 감각으로 더 멋지고 젊어 보이는 스타일을 만들어 드립니다.<br>
+                            나이와 스타일에 딱 맞는 맞춤형 뷰티 솔루션새로운 메뉴와 케어 프로그램으로 몸도 마음도 더 젊어지는 시간을 선물해드려요.<br>
+                            아름다움은 잠깐이 아니라, 꾸준한 과정!<br>
+                            저와 함께 매 순간, 당신만의 젊음을 지켜보세요
+                        </div>
+                        <button class="more-btn">더보기</button>
+                        <a href="https://m.blog.naver.com/bagkol1524" target="_blank" class="reserve-btn">블로그구경가기</a>
+                    </div>
+                </div>
+                <!-- 디자이너 2 -->
+                <div class="product-card">
+                    <img src="image/p1 (8).jpg" alt="주은 실장" class="product-img">
+                    <div class="product-info">
+                        <div class="product-designer">주은 실장</div>
+                        <div class="product-desc short">
+                            재방문 1등 [레이어드 컷&레이어드펌 ,뿌리아이롱펌,미니솜브레 / 맨즈 다운펌,시스루댄디펌]<br>
+                            모든 헤어스타일의 기초가 되는 [뿌리아이롱펌]<br>
+                            털어서 말리면 자연스럽게 흐르는 cs 컬 - [허쉬펌,레이어드펌]
+                        </div>
+                        <div class="product-desc full" style="display:none;">
+                            재방문 1등 [레이어드 컷&레이어드펌 ,뿌리아이롱펌,미니솜브레 / 맨즈 다운펌,시스루댄디펌]<br>
+                            모든 헤어스타일의 기초가 되는 [뿌리아이롱펌]<br>
+                            털어서 말리면 자연스럽게 흐르는 cs 컬 - [허쉬펌,레이어드펌]<br>
+                            새치로 부터 자유로워지는 - [미니솜브레]<br>
+                            트렌디 하면서 스타일링이 간편한 - [다운펌,시스루 댄디 펌,필러스펌]<br>
+                            트렌드는 따르되, 당신만의 개성을 잃지 않는 자연스러운 스타일을 완성해 드립니다. 19년차 헤어디자이너의 섬세한 손길로, 단 한사람을 위한 특별한 디자인을 선물 합니다.<br>
+                            꼼꼼하고 세심한 시술로 당신의 매력을 더해 드릴께요.<br>
+                            머리만 바뀌어도 일상이 달라집니다. 지금, 당신의 이야기를 들려 주세요
+                        </div>
+                        <button class="more-btn">더보기</button>
+                        <a href="https://m.blog.naver.com/ih48je" target="_blank" class="reserve-btn">블로그구경가기</a>
+                    </div>
+                </div>
+                <!-- 디자이너 3 -->
+                <div class="product-card">
+                    <img src="image/p1.jpg" alt="조이 디자이너" class="product-img">
+                    <div class="product-info">
+                        <div class="product-designer">조이 디자이너</div>
+                        <div class="product-desc short">
+                            차분한 감성 속에 탄탄한 실력, 디자이너 조이입니다.<br>
+                            비비드뷰티하우스에서 6년째 근무하며, 베이직부터 하나하나 제대로 배우고 쌓아온 기술력으로 고객님의 아름다움을 책임지고 있습니다.<br>
+                            차분한 성격에 섬세한 손길, 그리고 젊은 감각까지 더해 트렌디하면서도 나에게 꼭 어울리는 스타일을 완성해드립니다.
+                        </div>
+                        <div class="product-desc full" style="display:none;">
+                            차분한 감성 속에 탄탄한 실력, 디자이너 조이입니다.<br>
+                            비비드뷰티하우스에서 6년째 근무하며, 베이직부터 하나하나 제대로 배우고 쌓아온 기술력으로 고객님의 아름다움을 책임지고 있습니다.<br>
+                            차분한 성격에 섬세한 손길, 그리고 젊은 감각까지 더해 트렌디하면서도 나에게 꼭 어울리는 스타일을 완성해드립니다.<br>
+                            스타일은 물론, 편안한 소통까지 함께하는 디자이너. 내공 깊은 손길을 직접 경험해보세요.
+                        </div>
+                        <button class="more-btn">더보기</button>
+                        <a href="https://m.blog.naver.com/sanghui1298" target="_blank" class="reserve-btn">블로그구경가기</a>
+                    </div>
+                </div>
+                <!-- 디자이너 4 -->
+                <div class="product-card">
+                    <img src="image/p1 (6).jpg" alt="주희 점장" class="product-img">
+                    <div class="product-info">
+                        <div class="product-designer">주희 점장</div>
+                        <div class="product-desc short">
+                            빛과 색으로 얼굴 위에 이야기를 그리는 20년 차 메이크업 아티스트, 그리고 매장의 흐름을 조율하는 점장입니다.<br>
+                            영화 분장으로 시작해 웨딩 메이크업, 강의까지, 수많은 얼굴과 감정을 터치하며 쌓아온 경험이 저만의 무기입니다.<br>
+                            단순한 화장이 아니라, 한 사람의 분위기와 개성을 돋보이게 하는 맞춤 아트를 만들어갑니다
+                        </div>
+                        <div class="product-desc full" style="display:none;">
+                            빛과 색으로 얼굴 위에 이야기를 그리는 20년 차 메이크업 아티스트, 그리고 매장의 흐름을 조율하는 점장입니다.<br>
+                            영화 분장으로 시작해 웨딩 메이크업, 강의까지, 수많은 얼굴과 감정을 터치하며 쌓아온 경험이 저만의 무기입니다.<br>
+                            단순한 화장이 아니라, 한 사람의 분위기와 개성을 돋보이게 하는 맞춤 아트를 만들어갑니다
+                        </div>
+                        <button class="more-btn">더보기</button>
+                        <a href="https://m.blog.naver.com/vividbeautyhouse" target="_blank" class="reserve-btn">블로그구경가기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 리뷰 섹션 시작 -->
+    <section class="review-section" id="review">
+        <!-- 리뷰 컨테이너 -->
+        <div class="review-container">
+            <!-- 리뷰 타이틀 -->
+            <h1 class="review-title">고객 후기</h1>
+            <!-- 3x2 리뷰 그리드 -->
+            <div class="review-grid">
+                <!-- 리뷰 1 -->
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-meta"><span class="review-designer">정재영 원장님</span> | <span class="review-service">아이롱펌</span></div>
+                    <div class="review-extra"><span class="review-date">2024-06-10</span> | <span class="review-user">@happy123</span></div>
+                    <div class="review-text">
+                        머리결이 정말 부드럽고 볼륨도 살아나서 너무 만족합니다!<br>
+                        상담도 친절하게 해주셔서 기분 좋게 시술받았어요.<br>
+                        다음에도 꼭 방문할게요!
+                    </div>
+                </div>
+                <!-- 리뷰 2 -->
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-meta"><span class="review-designer">주은 실장님</span> | <span class="review-service">레이어드펌</span></div>
+                    <div class="review-extra"><span class="review-date">2024-06-08</span> | <span class="review-user">@cutiepie</span></div>
+                    <div class="review-text">
+                        스타일이 자연스럽고 손질도 쉬워졌어요.<br>
+                        원하는 스타일을 정확히 이해해주셔서 결과가 정말 마음에 들어요.<br>
+                        친구들에게도 추천할게요!
+                    </div>
+                </div>
+                <!-- 리뷰 3 -->
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-meta"><span class="review-designer">조이 디자이너</span> | <span class="review-service">볼륨매직</span></div>
+                    <div class="review-extra"><span class="review-date">2024-06-05</span> | <span class="review-user">@joyfulhair</span></div>
+                    <div class="review-text">
+                        머리가 한결 차분해지고 윤기가 나서 기분이 좋아요.<br>
+                        꼼꼼하게 시술해주셔서 믿음이 갑니다.<br>
+                        다음에도 꼭 조이쌤께 받고 싶어요!
+                    </div>
+                </div>
+                <!-- 리뷰 4 -->
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-meta"><span class="review-designer">주희 점장님</span> | <span class="review-service">메이크업</span></div>
+                    <div class="review-extra"><span class="review-date">2024-06-03</span> | <span class="review-user">@eventqueen</span></div>
+                    <div class="review-text">
+                        중요한 날 메이크업을 맡겼는데 정말 만족스러웠어요.<br>
+                        자연스럽고 고급진 느낌으로 변신시켜주셔서 감사해요.<br>
+                        다음 행사 때도 꼭 예약할게요!
+                    </div>
+                </div>
+                <!-- 리뷰 5 -->
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-meta"><span class="review-designer">정재영 원장님</span> | <span class="review-service">커트</span></div>
+                    <div class="review-extra"><span class="review-date">2024-05-30</span> | <span class="review-user">@hairfan</span></div>
+                    <div class="review-text">
+                        커트만 했는데도 스타일이 확 달라졌어요.<br>
+                        세심하게 신경써주셔서 너무 감사해요.<br>
+                        앞으로도 계속 단골할 예정입니다!
+                    </div>
+                </div>
+                <!-- 리뷰 6 -->
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-meta"><span class="review-designer">주은 실장님</span> | <span class="review-service">뿌리아이롱펌</span></div>
+                    <div class="review-extra"><span class="review-date">2024-05-28</span> | <span class="review-user">@rootpower</span></div>
+                    <div class="review-text">
+                        뿌리 볼륨이 살아나서 머리가 훨씬 풍성해졌어요.<br>
+                        시술 내내 친절하게 설명해주셔서 안심하고 맡길 수 있었습니다.<br>
+                        다음에도 꼭 방문할게요!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 브랜드 히스토리(사장님 인사말) 섹션 (더보기/닫기 기능 포함) -->
+    <section class="brand-history-section" id="brand">
+      <div class="brand-history-container section-container">
+        <div class="brand-history-img-box">
+          <img src="image/show (1).jpg" alt="비비드뷰티하우스 매장사진" class="brand-history-img">
+          <a href="https://smartstore.naver.com/ibhida" target="_blank" class="buy-btn" style="margin-top:18px;display:inline-block;">제품구매하러가기</a>
+        </div>
+        <div class="brand-history-text-box">
+          <h2 class="brand-history-title">비비드뷰티하우스 매장소개</h2>
+          <div class="brand-history-desc short">
+            김해 no.1 아이롱펌 전문 / 장유율하프리미엄 헤어살롱<br>
+            장유 율하동에서 20년이상 미용의 길을 걸어온 2대째 미용가문<br>
+            비비드뷰티하우스는 김해최초 아이롱펌 전문매장으로,<br>
+            뿌리부터 살아있는 탄력있는 볼륨펌과 디자인 맞춤형 열펌 시술로 널리 알려진 지역 대표 미용실입니다
+          </div>
+          <div class="brand-history-desc full" style="display:none;">
+            김해 no.1 아이롱펌 전문 / 장유율하프리미엄 헤어살롱<br>
+            장유 율하동에서 20년이상 미용의 길을 걸어온 2대째 미용가문<br>
+            비비드뷰티하우스는 김해최초 아이롱펌 전문매장으로,<br>
+            뿌리부터 살아있는 탄력있는 볼륨펌과 디자인 맞춤형 열펌 시술로 널리 알려진 지역 대표 미용실입니다<br>
+            <br>
+            펌 하나로 이미지가 달라집니다!!<br>
+            아이롱펌, 볼륨매직, 레이어드펌, 다운펌 최고 인기 상품<br>
+            <br>
+            영국 비달사순을 매년 가시는 원장님의 깊은 커트테크닉<br>
+            고퀄리티 기술보유한 커트장인들만 근무하는 미용실<br>
+            <br>
+            트렌디하면서도 데일리하게 유지하기 쉬운 스타일을 제안해드립니다<br>
+            <br>
+            이런분들께 추천합니다!!!<br>
+            1. 김해 장유 율하에서 진짜 커트, 펌 잘하는 미용실을 찾는분<br>
+            2. 머릿결 손상없이 오래가는 아이롱펌을 원하시는 분<br>
+            3. 미용실 갈때마다 상담이 아쉬웠던 분<br>
+            4. 한번의 펌으로 고급진 이미지 변신을 원하시는 분<br>
+            <br>
+            비비드뷰티하우스에 한번도 안오신분은 있어도 한번만 오신분은 없답니다<br>
+            믿고 방문해주세요!!^^
+          </div>
+          <button class="brand-more-btn">더보기</button>
+          <button class="brand-close-btn" style="display:none;">닫기</button>
+          <div class="brand-contact">
+            상담이 필요하시면, <b>비비드뷰티하우스로 연락주십시오.</b><br>
+            <span class="brand-contact-phone">055-334-1622</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 푸터 시작 -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- 이용약관, 개인정보처리방침 -->
+            <div class="footer-links">
+                <a href="#" class="footer-link">이용약관</a> |
+                <a href="#" class="footer-link">개인정보처리방침</a>
+            </div>
+            <!-- 매장 정보 -->
+            <div class="footer-info">
+                <div>대표번호 <b>055-334-1622</b></div>
+                <div>운영시간 오전10시~ 오후7시(매주월요일고정휴무)</div>
+                <div>주소 경남 김해시 율하2로 126번길 31</div>
+                <div>사업자등록번호 758-02-00175</div>
+                <div>업체명 비비드뷰티하우스</div>
+                <div>대표 정재영</div>
+                <div>개인정보관리 책임자 김주희 <a href="mailto:jjuhee92@naver.com">jjuhee92@naver.com</a></div>
+            </div>
+            <!-- 소셜 아이콘 -->
+            <div class="footer-social">
+                <a href="https://www.instagram.com/vivid_no1" target="_blank" class="footer-social-link" aria-label="인스타그램">
+                    <!-- 인스타그램 로고 SVG -->
+                    <svg width="28" height="28" viewBox="0 0 448 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9 114.9-51.3 114.9-114.9S287.7 141 224.1 141zm0 186c-39.5 0-71.5-32-71.5-71.5s32-71.5 71.5-71.5 71.5 32 71.5 71.5-32 71.5-71.5 71.5zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.3-9.9-66.7-36.2-92.1S388.6 1.7 353.3 0C317.7-1.7 130.3-1.7 94.7 0 59.4 1.7 28 9.9 2.6 36.2S1.7 123.4 0 158.7c-1.7 35.6-1.7 223 0 258.6 1.7 35.3 9.9 66.7 36.2 92.1s56.8 34.5 92.1 36.2c35.6 1.7 223 1.7 258.6 0 35.3-1.7 66.7-9.9 92.1-36.2s34.5-56.8 36.2-92.1c1.7-35.6 1.7-223 0-258.6zM398.8 388c-7.8 19.6-22.9 34.7-42.5 42.5-29.4 11.7-99.2 9-132.3 9s-102.9 2.6-132.3-9c-19.6-7.8-34.7-22.9-42.5-42.5-11.7-29.4-9-99.2-9-132.3s-2.6-102.9 9-132.3c7.8-19.6 22.9-34.7 42.5-42.5C119.1 9 188.9 11.6 222 11.6s102.9-2.6 132.3 9c19.6 7.8 34.7 22.9 42.5 42.5 11.7 29.4 9 99.2 9 132.3s2.6 102.9-9 132.3z"/>
+                    </svg>
+                </a>
+                <a href="https://m.blog.naver.com/vividbeautyhouse" target="_blank" class="footer-social-link" aria-label="블로그">
+                    <!-- 네이버 블로그 로고 SVG -->
+                    <svg width="28" height="28" viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M512 77.6v356.8c0 42.8-34.8 77.6-77.6 77.6H77.6C34.8 512 0 477.2 0 434.4V77.6C0 34.8 34.8 0 77.6 0h356.8C477.2 0 512 34.8 512 77.6zM256 384c70.7 0 128-57.3 128-128S326.7 128 256 128 128 185.3 128 256s57.3 128 128 128z"/>
+                    </svg>
+                </a>
+            </div>
+            <!-- 저작권 -->
+            <div class="footer-copyright">
+                COPYRIGHT 비비드뷰티하우스. ALL RIGHTS RESERVED
+            </div>
+        </div>
+    </footer>
+
+    <!-- 챗봇 플로팅 버튼 시작 -->
+    <a href="https://chatgpt.com/g/g-6880a54878288191be1cd64379a104d1-bibideubyutihauseu-caesbos" target="_blank" class="chatbot-fab" aria-label="비비드뷰티하우스 챗봇">
+      <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="chatbotShadow" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse">
+            <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#00c73c" flood-opacity="0.18"/>
+          </filter>
+        </defs>
+        <!-- 말풍선 바탕 -->
+        <ellipse cx="24" cy="24" rx="20" ry="18" fill="#fff" stroke="#00c73c" stroke-width="3" filter="url(#chatbotShadow)"/>
+        <!-- 로봇 눈 -->
+        <circle cx="17" cy="22" r="2.5" fill="#00c73c"/>
+        <circle cx="31" cy="22" r="2.5" fill="#00c73c"/>
+        <!-- 로봇 입 -->
+        <rect x="18" y="29" width="12" height="3" rx="1.5" fill="#00c73c"/>
+        <!-- 말풍선 꼬리 -->
+        <polygon points="24,42 28,38 20,38" fill="#fff" stroke="#00c73c" stroke-width="2"/>
+      </svg>
+    </a>
+    <!-- 챗봇 플로팅 버튼 끝 -->
+
+    <script src="script.js"></script>
+</body>
+</html> 
