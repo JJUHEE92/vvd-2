@@ -1,19 +1,19 @@
 const CACHE_NAME = 'vivid-beauty-house-v1';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/styles.css',
-  '/script.js',
-  '/image/logo.1.jpg',
-  '/image/show (1).jpg',
-  '/image/iron.webp',
-  '/image/model 1.JPG',
-  '/image/model 2.JPG',
-  '/image/show 1.png',
-  '/image/p1 (1).jpg',
-  '/image/p1 (8).jpg',
-  '/image/p1.jpg',
-  '/image/p1 (6).jpg'
+  './',
+  './index.html',
+  './styles.css',
+  './script.js',
+  './image/logo.1.jpg',
+  './image/show (1).jpg',
+  './image/iron.webp',
+  './image/model 1.JPG',
+  './image/model 2.JPG',
+  './image/show 1.png',
+  './image/p1 (1).jpg',
+  './image/p1 (8).jpg',
+  './image/p1.jpg',
+  './image/p1 (6).jpg'
 ];
 
 // 서비스 워커 설치
